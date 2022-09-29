@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Julius+Sans+One&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--col-black);
+  height: 100vh;
+  color: var(--col-white);
+  font-family: "Cinzel", serif;
+  /* font-family: "Cinzel Decorative", cursive; */
+  /* font-family: "Cormorant Unicase", serif; */
+  /* font-family: "Julius Sans One", sans-serif; */
+  /* font-family: "Raleway", sans-serif; */
+}
+i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+i:hover {
+  transform: scale(1.1);
+}
+/* COLOR */
+.dark-theme {
+  --col-white: #fff;
+  --col-black: #0c0b0b;
+  --col-grey: #d7d7d72d;
+  --col-grey2: #d7d7d750;
+  --col-grey3: #d7d7d72f;
+}
+.light-theme {
+  --col-white: #0c0b0b;
+  --col-black: #fff;
+  --col-grey: #999;
+  --col-grey2: rgba(119, 119, 119, 0.381);
+  --col-grey3: #9999996e;
+}
+/* sCROLL BAR */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: solid 1px var(--col-grey2);
+  border-radius: 10rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--col-grey2);
+}
+.flex {
+  display: flex;
+}
+.space-btw {
+  justify-content: space-between;
+}
+.align-items {
+  align-items: center;
+}
+.container {
+  border: solid 1px var(--col-white);
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  padding: 3rem;
+}
+.detail-box {
+  height: 100%;
+  gap: 3rem;
+}
+.form-box,
+.info-box {
+  border: solid 1px var(--col-white);
+  width: 59%;
+  padding: 2rem;
+}
+.pad {
+  width: 59%;
+}
+.info-box {
+  width: 100%;
+  height: 100%;
+}
+.search {
+  width: 85%;
+}
+.search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: solid 1px var(--col-grey2);
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: inherit;
+  width: 85%;
+  margin-right: 1rem;
+}
+.search-match {
+  width: 80%;
+  height: 85%;
+  overflow: auto;
+}
+.list {
+  list-style-type: none;
+}
+.list-item {
+  padding: 0.9rem;
+  border-bottom: solid 1px var(--col-grey3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.list-item:hover {
+  background-color: var(--col-grey3);
+}
+.list-item h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.list-item i {
+  color: var(--col-grey);
+}
+.bt-pane {
+  width: 70%;
+  margin: 0 5rem;
+  justify-content: space-evenly;
+}
+.bt-pane i {
+  padding: 1.5rem 0;
+}
+/* .word-box {
+  height: 100%;
+  overflow: auto;
+} */
+.nav {
+  margin-bottom: 3rem;
+}
+.nav p {
+  font-size: 1.5rem;
+}
+.word {
+  align-items: center;
+}
+.word h1 {
+  text-transform: capitalize;
+  font-size: 4rem;
+}
+.word-details {
+  height: 90%;
+  overflow: auto;
+}
+.sound {
+  background-color: #000;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.sound i {
+  color: white;
+}
+.text-tone p {
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  color: var(--col-grey2);
+}
+.definition ol {
+  padding: 3rem 2rem;
+}
+.definition li {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0rem;
+  text-transform: lowercase;
+  font-family: "Raleway", sans-serif;
+}
+.examples {
+  margin-bottom: 5rem;
+}
+.examples ul {
+  padding: 0 2rem;
+  list-style-type: disc;
+}
+.examples h2 {
+  margin-bottom: 1rem;
+}
+.examples li {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 2rem;
+}
+.synonyms {
+  margin-bottom: 3rem;
+}
+.synonyms h2,
+.antonyms h2,
+.examples h2 {
+  font-size: 2rem;
+}
+.synonyms ul,
+.antonyms ul {
+  /* display: inline-block; */
+  list-style-type: none;
+}
+.synonyms li,
+.antonyms li {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  margin-right: 1rem;
+  cursor: pointer;
+  line-height: 1.7;
+  transition: all 0.3s ease-in-out;
+}
+.synonyms li:hover,
+.antonyms li:hover {
+  color: rgb(19, 181, 250);
+}
+.more-info {
+  margin-top: 5rem;
+}
+.more-info a {
+  font-size: 1.5rem;
+}

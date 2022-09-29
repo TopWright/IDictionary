@@ -1,0 +1,16 @@
+{
+  "name": "dictionary_app",
+  "version": "1.0.0",
+  "description": "Dictionary app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "TopWright",
+  "license": "ISC",
+  "dependencies": {
+    "modernize.js": "^1.2.2"
+  }
+}
