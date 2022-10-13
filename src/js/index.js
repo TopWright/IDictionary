@@ -45,6 +45,7 @@ elements.searchForm.addEventListener('submit', event => {
 let item = [...document.querySelectorAll('.list-item')];
 item.forEach(item => {
     let wordItem = item.childNodes[1].textContent;
+    
     item.addEventListener('click', async () => {
         // Change page to veiw Result On mobile
         searchView.pageChange();
@@ -54,18 +55,18 @@ item.forEach(item => {
         // Get word and pass into the function Const
         let word = new Search(wordItem);
         // Get the result from API
-        try {
-            await word.getResults();
+        if (word) {
+            try {
+                await word.getResults();
 
-            // searchView.clearResult();
-            clearLoader();
-            searchView.renderResults(word.result);
-        } catch (error) {
-            alert(`${error}: Network Error`);
-        }
+                // searchView.clearResult();
+                clearLoader();
+                searchView.renderResults(word.result);
+            } catch (error) {
+                alert(`${error}: Network Error`);
+            }
+       }
 
-
-      
     })
 })
 
