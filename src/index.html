@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IDictionary | Words at your fingertips...</title>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -19,10 +19,12 @@
     <div class="container">
         <div class="detail-box flex flex-rev">
             <div class="form-box">
-                <div class="search">
-                    <input type="text" placeholder="Search Word">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                <form class="search">
+                    <input type="text" placeholder="Search Word" class="search-input" />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass search"></i>
+                    </button>
+                </form>
 
                 <div class="search-match">
                     <ul class="list">
@@ -80,100 +82,125 @@
                     <div class="nav flex space-btw align-item">
                         <i class="fa-solid fa-angle-left back-btn"></i>
                         <p>Definition</p>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star star" style="visibility: hidden;"></i>
+                    </div>
+                    <!-- <h1>words will appear here</h1> -->
+
+                    <div class="preloader">
+                        <img src="  /img/book.gif" alt="">
                     </div>
 
                     <div class="word-details">
-
-                        <div class="word flex space-btw">
-                            <h1>organisation</h1>
-                            <div class="sound">
-                                <i class="fa-solid fa-volume-high"></i>
-                            </div>
+                        <div class="word">
+                            <h1 class="title"></h1>
                         </div>
 
                         <div class="text-tone flex align-items">
-                            <p>//ɔːɡ(ə)nʌɪˈzeɪʃ(ə)n/</p>
-                            <span>NOUN</span>
+                            <p class="tone"></p>
+                            <div class="sound">
+                                <audio class="audio" src=""></audio>
+                                <!-- <i class="fa-solid fa-volume-high"></i> -->
+                            </div>
                         </div>
 
-                        <div class="definition">
-                            <ol>
-                                <li>
-                                    an organized group of people with a particular purpose, such as a business or
-                                    government
-                                    department.
-                                    "a research organization"
-                                </li>
-                                <li>
-                                    the action of organizing something.
-                                    "the organization of conferences"
-                                </li>
-                            </ol>
+                        <p class="part-of-speech"></p>
+
+                        <div class="temp-1">
+                            <div class="definition">
+                                <ol class="def-items">
+                                </ol>
+                            </div>
+
+                            <div class="examples">
+                                <h2></h2>
+                                <ul class="exam-items">
+                                </ul>
+                            </div>
+
+                            <div class="synonyms">
+                                <h2></h2>
+                                <ul class="syn-items">
+                                </ul>
+                            </div>
+
+                            <div class="antonyms">
+                                <h2></h2>
+                                <ul class="ant-items">
+                                    <li></li>
+                                </ul>
+                            </div>
+
                         </div>
 
-                        <div class="examples">
-                            <h2>Use Cases</h2>
-                            <ul>
-                                <li>
-                                    We can't do without the help of your organisation.
-                                </li>
-                                <li>
-                                    His application for membership of the
-                                    organisation was
-                                    rejected
-                                </li>
-                                <li>
-                                    The organisation has been enjoined
-                                    to end all restrictions.
-                                </li>
-                                <li>
-                                    The prospect of
-                                    change of this kind has an
-                                    unsettling effect on any organisation.
-                                </li>
-                            </ul>
+                        <div class="marginbottom"></div>
+
+                        <p class="part-of-speech2"></p>
+
+                        <div class="temp-2">
+                            <div class="definition2">
+                                <ol class="def-items2">
+                                </ol>
+                            </div>
+
+                            <div class="examples2">
+                                <h2></h2>
+                                <ul class="exam-items2">
+                                </ul>
+                            </div>
+
+                            <div class="synonyms2">
+                                <h2></h2>
+                                <ul class="syn-items2">
+                                </ul>
+                            </div>
+
+                            <div class="antonyms2">
+                                <h2></h2>
+                                <ul class="ant-items2">
+                                    <li></li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="synonyms">
-                            <h2>Synonyms</h2>
-                            <ul>
-                                <li>grouping</li>
-                                <li>institution</li>
-                                <li>management</li>
-                                <li>system</li>
-                                <li>alignment</li>
-                                <li>assembling</li>
-                                <li>assembly</li>
-                                <li>chemistry</li>
-                            </ul>
-                        </div>
+                        <div class="marginbottom"></div>
 
-                        <div class="antonyms">
-                            <h2>antomyms</h2>
-                            <ul>
-                                <li>grouping</li>
-                                <li>institution</li>
-                                <li>management</li>
-                                <li>system</li>
-                                <li>alignment</li>
-                                <li>assembling</li>
-                                <li>assembly</li>
-                                <li>chemistry</li>
-                            </ul>
+                        <p class="part-of-speech3"></p>
+
+                        <div class="temp-3">
+                            <div class="definition3">
+                                <ol class="def-items3">
+                                </ol>
+                            </div>
+
+                            <div class="examples3">
+                                <h2></h2>
+                                <ul class="exam-items3">
+                                </ul>
+                            </div>
+
+                            <div class="synonyms3">
+                                <h2></h2>
+                                <ul class="syn-items3">
+                                </ul>
+                            </div>
+
+                            <div class="antonyms3">
+                                <h2></h2>
+                                <ul class="ant-items3">
+                                </ul>
+                            </div>
+
+                            <div class="more-info3">
+                            </div>
                         </div>
 
                         <div class="more-info">
-                            <a href="#">To learn more about this word</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
-
 </body>
 
 </html>
