@@ -54,12 +54,18 @@ item.forEach(item => {
         // Get word and pass into the function Const
         let word = new Search(wordItem);
         // Get the result from API
-        await word.getResults();
-        console.log(word.result);
+        try {
+            await word.getResults();
 
-        // searchView.clearResult();
-        clearLoader();
-        searchView.renderResults(word.result);
+            // searchView.clearResult();
+            clearLoader();
+            searchView.renderResults(word.result);
+        } catch (error) {
+            alert(`${error}: Network Error`);
+        }
+
+
+      
     })
 })
 

@@ -11,7 +11,7 @@ export default class Search {
             this.result = result.data;
             //console.log(this.result);
         } catch {
-            alert(`Word Not found. Enter Valid Word. Thanks...`);
+            alert(`Word Not found or Network error. Try again. Thanks...`);
         }
     }
 

@@ -173,8 +173,6 @@ const removeUndefined = (el) => {
 export const renderResults = (words) => {
     if (words) {
         words.forEach(renderWord);
-    } else {
-        alert(`Network Error!... Please try again`)
     }
 };
 
