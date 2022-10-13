@@ -10,10 +10,7 @@ const state = {};
 const ctrlSearch = async () => {
     // Get Query
     const word = searchView.getInputResult();
-
     searchView.clearInput();
-
-
     renderLoader();
 
     if (word) {

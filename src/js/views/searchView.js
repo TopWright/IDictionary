@@ -2,6 +2,8 @@ import { elements } from "./base";
 
 export const getInputResult = () => {
     if (elements.searchInput.value) elements.searchInput.value;
+
+    return elements.searchInput.value;
 }
 
 export const clearInput = () => {
