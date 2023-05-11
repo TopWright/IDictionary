@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: solid 1px brown; */
+}
+#text {
+  display: none;
 }
 html {
   font-size: 62.5%;
@@ -48,6 +52,9 @@ button {
   --col-grey2: rgba(119, 119, 119, 0.381);
   --col-grey3: #9999996e;
 }
+.color-white {
+  color: white;
+}
 /* sCROLL BAR */
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -71,6 +78,12 @@ button {
 }
 .align-items {
   align-items: center;
+}
+.center {
+  text-align: center;
+}
+.margin {
+  margin-bottom: 2rem;
 }
 .container {
   border: solid 1px var(--col-white);
@@ -114,6 +127,7 @@ button {
 .search {
   width: 100%;
   display: inline-block;
+  padding: 1rem 0;
 }
 .search input {
   border: none;
@@ -123,7 +137,7 @@ button {
   padding: 1rem;
   font-size: 1.7rem;
   color: inherit;
-  width: 70%;
+  width: 80%;
   margin-right: 1rem;
 }
 .search i {
@@ -135,14 +149,24 @@ button {
   height: 85%;
   overflow: auto;
 }
+.recent-notice {
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+.recent-notice h2 {
+  text-decoration: underline;
+}
 .list {
   list-style-type: none;
 }
 .list-item {
-  padding: 1.2rem;
+  padding: 1.7rem;
   border-bottom: solid 1px var(--col-grey3);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+.fav-items {
+  padding: 1.6rem;
 }
 .list-item:hover {
   background-color: var(--col-grey3);
@@ -156,19 +180,14 @@ button {
 }
 .bt-pane {
   width: 33%;
+  background-color: #000;
   position: fixed;
-  bottom: 7%;
+  bottom: 5%;
   justify-content: space-evenly;
-
-  display: none;
 }
 .bt-pane i {
-  padding: 1.5rem 0;
+  font-size: 1.7rem;
 }
-/* .word-box {
-  height: 100%;
-  overflow: auto;
-} */
 .nav {
   margin-bottom: 3rem;
 }
@@ -304,9 +323,63 @@ button {
 }
 .more-info a {
   font-size: 1.5rem;
+  color: #7b93eb;
+  transition: all 0.3s;
+}
+.more-info a:hover {
+  color: rgb(8, 89, 239);
 }
 .temp-1,
 .temp-2,
 .temp-3 {
   margin-top: 2rem;
+}
+.grid {
+  display: grid;
+  justify-items: center;
+}
+.grid span {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin-top: -1rem;
+}
+.Fav-words,
+.info-page {
+  display: none;
+}
+.canel {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.fav-notice {
+  margin-top: 10rem;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+.fav {
+  padding: 1rem 2rem;
+}
+.info {
+  padding: 1rem 2rem;
+  display: none;
+}
+.underline {
+  font-size: 1.7rem;
+  text-decoration: underline;
+}
+.items {
+  font-size: 5rem;
+}
+.info-text {
+  letter-spacing: 1px;
+  line-height: 3rem;
+  padding: 2rem;
+  overflow: auto;
+}
+.info-text p {
+  font-size: 2rem;
+}
+.icon-info,
+.icon-starred {
+  cursor: pointer;
 }

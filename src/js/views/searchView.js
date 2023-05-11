@@ -8,9 +8,15 @@ export const getInputResult = () => {
 
 export const clearInput = () => {
     elements.searchInput.value = "";
+
+
+
 };
 
 export const clearResults = () => {
+    elements.star.classList.add('fa-regular');
+    elements.star.classList.remove('fa-solid');
+
     let items = document.querySelectorAll('.items')
 
     items.forEach(el => {
@@ -39,8 +45,6 @@ export const clearResults = () => {
     elements.reference.textContent = '';
 
 };
-
-let app = document.querySelector('.def-items');
 
 export const renderWord = (word) => {
     elements.word.textContent = word.word;
