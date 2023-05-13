@@ -119,3 +119,13 @@
     font-size: 55%;
   }
 }
+@media only screen and (max-width: 400px) {
+  .search input {
+    width: 73%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .search input {
+    width: 70%;
+  }
+}
